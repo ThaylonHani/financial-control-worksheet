@@ -1,0 +1,134 @@
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* background-color:var(--table-border-color); */
+
+}
+main h2 {
+    text-align: center;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  background-color: var(--background-body);
+  color: var(--font-color-4);
+}
+main .input-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-body);
+}
+main .input-section label {
+  font-size: 1.3rem;
+}
+main .input-section select {
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--background-color);
+}
+main .input-section select option {
+  padding: 0.5rem;
+  background-color: var(--background-body);
+}
+main .input-section .select-group {
+  margin-bottom: 2rem;
+}
+main .input-section .input-group{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 2rem;
+
+} 
+main .input-section .input-group input {
+    display: block;
+    width: 100%;
+  background-color: var(--background-body);
+  text-align: center;
+  border: 2px solid var(--background-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+main .input-section .input-group button{
+    color: var(--background-color);
+    border:2px solid var(--background-color);
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+    border-radius:0.5rem;
+}
+main .input-section .input-group button span{
+    padding:0.1rem 0.7rem;
+}
+main #expense-tables, #revenues-tables, #total-tables {
+    width: 90%;
+    align-items:center;
+    text-align: center;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    background-color: var(--background-color);
+    color: var(--font-color-2);
+    font-size:1.1rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.3rem;
+}
+main table{
+    width: 100%;
+    text-align: center;
+    align-items:center;
+    cursor: default;
+}
+main table thead th .expenses, .revenues , .total  {
+    color:var(--font-color);
+}
+main table thead tr{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+main table tbody tr td{
+    border:2px solid var(--table-body-border-color);
+    gap: 0.5rem;
+}
+
+
+
+main .topic {
+    padding:1rem 0;
+    background-color: var(--background-body);    
+    margin-top: 1rem;
+    width: 100%;
+}
+
+main .topic h2{
+    font-size: 1.5rem;
+}
+
+main .topic .topic-itens{
+    padding: 1rem 1rem;
+    background-color: var(--background-color);
+    border-radius: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+main .topic span {
+    color: var(--font-color-2)
+}
+
+main .topic p {
+    color: var(--font-color-3);
+}
