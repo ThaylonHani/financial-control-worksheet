@@ -7,6 +7,7 @@
     --menu-background-color: #4C6342;
     --font-color-3:var(--h1-color);
     --font-color-4:var(--background-color);
+    --font-color-5:var(--background-body);
     --table-border-color:var(--h1-color);
     --table-body-border-color:var(--background-body);
 }
@@ -21,8 +22,7 @@ body{
     background-color:var(--background-body) ;
     width: 100vw;
     height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
     min-width:100vw ;
     min-height:100vw ;
+    font-family: 'Roboto', sans-serif;
 }

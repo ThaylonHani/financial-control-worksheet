@@ -89,8 +89,19 @@ main table{
     align-items:center;
     cursor: default;
 }
-main table thead th .expenses, .revenues , .total  {
-    color:var(--font-color);
+main table caption{
+  color: var(--font-color-5);
+  font-weight: bold;
+  font-style: italic;
+}
+.expenses, .revenue , .total  {
+    color:var(--font-color-3);
+}
+#rest{
+  width: 10px;
+  overflow:auto ;
+  overflow-x: auto ;
+
 }
 main table thead tr{
     align-items: center;
@@ -101,8 +112,14 @@ main table tbody tr td{
     border:2px solid var(--table-body-border-color);
     gap: 0.5rem;
 }
-
-
+main table tbody tr td.remove-button{
+  border: none;
+}
+.remove-button a span {
+  color: var(--font-color);
+  padding: 0.2rem
+}
+ 
 
 main .topic {
     padding:1rem 0;
