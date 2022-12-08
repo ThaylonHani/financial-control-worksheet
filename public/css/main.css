@@ -6,7 +6,6 @@ main {
   text-align: center;
   justify-content: center;
   align-items: center;
-  /* background-color:var(--table-border-color); */
 }
 h2 {
   text-align: center;
@@ -33,9 +32,9 @@ h2 {
   padding: 0.5rem 1rem;
   border: 2px solid var(--background-color);
   transition: all 0.3s;
-  cursor:pointer ;
+  cursor: pointer;
 }
-.input-section select:hover{
+.input-section select:hover {
   opacity: 0.6;
   border-color: var(--font-color);
 }
@@ -44,7 +43,6 @@ h2 {
   align-items: center;
   text-align: center;
   justify-content: center;
-
 }
 .input-section .input-group {
   display: flex;
@@ -62,11 +60,12 @@ h2 {
   border: 2px solid var(--background-color);
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  transition: all 0.3s
+  transition: all 0.3s;
 }
-.input-section .input-group input:hover,input:focus{
+.input-section .input-group input:hover,
+input:focus {
   opacity: 0.6;
-  border:2px solid var(--font-color)
+  border: 2px solid var(--font-color);
 }
 .input-section .input-group button {
   color: var(--background-color);
@@ -77,12 +76,12 @@ h2 {
   transition: all 0.3s;
   cursor: pointer;
 }
-.input-section .input-group button:disabled:hover{
+.input-section .input-group button:disabled:hover {
   cursor: not-allowed;
   color: var(--background-color);
-
 }
-.input-section .input-group button:hover,.input-section .input-group button:focus {
+.input-section .input-group button:hover,
+.input-section .input-group button:focus {
   background-color: var(--background-color);
   color: var(--background-body);
   opacity: 0.6;
@@ -149,8 +148,9 @@ td {
   padding: 0.2rem;
   transition: all 0.3s;
 }
-.remove-button a span:hover,.remove-button a:focus {
-  color:var(--font-color-2);
+.remove-button a span:hover,
+.remove-button a:focus {
+  color: var(--font-color-2);
 }
 
 .topic {
@@ -160,7 +160,7 @@ td {
   width: 100%;
 }
 
- .topic h2 {
+.topic h2 {
   font-size: 1.5rem;
 }
 
@@ -172,19 +172,20 @@ td {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-  transition: all 0.3s
+  transition: all 0.3s;
 }
 .topic .topic-itens p {
   margin-bottom: 1rem;
 }
 
- .topic span {
+.topic span {
   color: var(--font-color-2);
   transition: all 0.3s;
   cursor: default;
 }
-.topic span:hover{
-  transform: translateY(-0.4rem)}
+.topic span:hover {
+  transform: translateY(-0.4rem);
+}
 
 .topic p {
   color: var(--font-color-3);
@@ -198,122 +199,124 @@ td {
   color: var(--font-color-3);
 }
 
-
-@media (min-width:768px){
-   .input-section{
+@media (min-width: 768px) {
+  .input-section {
     margin-bottom: 5rem;
   }
-   .input-section .input-group input{
+  .input-section .input-group input {
     padding: 0.9rem;
     margin-bottom: 0.5rem;
   }
-   .input-section .input-group button {
+  .input-section .input-group button {
     margin-top: 2rem;
   }
-  .input-section .input-group button span{
+  .input-section .input-group button span {
     padding: 0.4rem 2rem;
-    font-size:2rem;
+    font-size: 2rem;
   }
 
   main h2 {
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
   }
 
-  #expense-tables,#revenues-tables,#total-tables {
+  #expense-tables,
+  #revenues-tables,
+  #total-tables {
     margin-bottom: 5rem;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
     height: 10rem;
-    overflow:auto
+    overflow: auto;
   }
   main section::-webkit-scrollbar {
-    width: 1rem ;
+    width: 1rem;
+  }
+  main section::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+  }
+  main section::-webkit-scrollbar-thumb {
+    background-color: var(--h1-color);
+    border-radius: 1rem;
+    border: 0.3rem solid var(--background-color);
+    color: var(--background-color);
+  }
 }
-main section::-webkit-scrollbar-track{
-  background-color:var(--background-color)
-}
-main section::-webkit-scrollbar-thumb{
-  background-color:var(--h1-color);
-  border-radius: 1rem;
-  border: 0.3rem solid var(--background-color) ;
-  color: var(--background-color)
-}
-}
-@media (min-width: 1024px){
-  .select-group label{
-    font-size:1.2rem
-  }
-  .select-group select{
-    font-size: 1rem;
-  }
-  .input-section .input-group input{
-    padding:1rem;
-    font-size: 1rem;
-  }
-
-  #expense-tables,#revenues-tables,#total-tables{
-    height:13rem;
-  }
-  tr,td{
-    font-size: 2rem;
-  }
-
-}
-@media (min-width:1440px){
-  .select-group label{
-    font-size:1.3rem
-  }
-  .input-section .input-group input{
-    padding:1.2rem;
+@media (min-width: 1024px) {
+  .select-group label {
     font-size: 1.2rem;
   }
-  .remove-button a span{
+  .select-group select {
+    font-size: 1rem;
+  }
+  .input-section .input-group input {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  #expense-tables,
+  #revenues-tables,
+  #total-tables {
+    height: 13rem;
+  }
+  tr,
+  td {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .select-group label {
+    font-size: 1.3rem;
+  }
+  .input-section .input-group input {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+  }
+  .remove-button a span {
     font-size: 2.3rem;
   }
 
-  .topic-itens{
+  .topic-itens {
     padding: 2rem;
-    display:flex;
-    font-size:1.3rem
+    display: flex;
+    font-size: 1.3rem;
   }
-  .topic-itens span{
+  .topic-itens span {
     font-size: 2rem;
-    padding:0.5rem;
-    text-align:center;
-    
+    padding: 0.5rem;
+    text-align: center;
   }
- .topic .topic-itens p {
+  .topic .topic-itens p {
     margin-right: 1rem;
     margin-bottom: 0;
     text-align: start;
     justify-content: center;
   }
 }
-@media (min-width: 2560px){
-  .select-group label, .input-group label{
-    font-size:2rem
-  }
-  .select-group select{
-    font-size: 1.5rem;
-  }
-  .input-section .input-group input{
-    padding:1.5rem;
+@media (min-width: 2560px) {
+  .select-group label,
+  .input-group label {
     font-size: 2rem;
   }
-  .input-section .input-group button span{
+  .select-group select {
+    font-size: 1.5rem;
+  }
+  .input-section .input-group input {
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+  .input-section .input-group button span {
     padding: 0.6rem 3rem;
-    font-size:3rem;
+    font-size: 3rem;
   }
-  #expense-tables,#revenues-tables,#total-tables{
-    height:14rem;
+  #expense-tables,
+  #revenues-tables,
+  #total-tables {
+    height: 14rem;
   }
-  tr,td{
+  tr,
+  td {
     font-size: 2.5rem;
   }
 
-  .remove-button a span{
+  .remove-button a span {
     font-size: 2.5rem;
   }
-
 }
