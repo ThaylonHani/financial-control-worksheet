@@ -8,26 +8,46 @@ $(() => {
   removeExpenseOrRevenue();
 });
 
-function handleInputSelect() {
-  select_input.click(function () {
-    if (select_input.val() == "Despesas") {
-      $(".input-group").find("label").text("Despesas:");
+
+function selectExpense() {
+  $(".input-group").find("label").text("Despesas:");
       $(".input-group")
         .find("#input-text")
         .attr("placeholder", "Nome da despesa");
       $(".input-group")
         .find("#input-number")
         .attr("placeholder", "Valor da despesa");
+}
+
+function selectRevenue() {
+  $(".input-group").find("label").text("Receitas:");
+  $(".input-group")
+    .find("#input-text")
+    .attr("placeholder", "Nome da receita");
+  $(".input-group")
+    .find("#input-number")
+    .attr("placeholder", "Valor da receita");
+}
+
+function handleInputSelect() {
+  select_input.click(function () {
+    if (select_input.val() == "Despesas") {
+      selectExpense()
     } else {
-      $(".input-group").find("label").text("Receitas:");
-      $(".input-group")
-        .find("#input-text")
-        .attr("placeholder", "Nome da receita");
-      $(".input-group")
-        .find("#input-number")
-        .attr("placeholder", "Valor da receita");
+     selectRevenue()
     }
   });
+}
+
+function buttonRemove() {
+  const td_button_remove = $("<td>").addClass("remove-button");
+      const a_button_remove = $("<a>").attr("href", "#");
+      const span_remove_button = $("<span>")
+        .addClass("material-symbols-outlined")
+        .text("delete");
+      a_button_remove.append(span_remove_button);
+  td_button_remove.append(a_button_remove);
+  return td_button_remove;
 }
 
 function addExpensesOrRevenuesTable() {
@@ -41,40 +61,26 @@ function addExpensesOrRevenuesTable() {
       const expense_table = $("#expense-tables").find("table");
       const row = $("<tr>");
       const td_expense_name = $("<td>")
-        .attr("class", "expenses")
+        .attr("class", "name-expense")
         .text(input_text.val());
       const td_expense_value = $("<td>")
         .text(input_number.val())
         .attr("title", input_number.val())
         .addClass("value-expense");
-      const td_button_remove = $("<td>").addClass("remove-button");
-      const a_button_remove = $("<a>").attr("href", "#");
-      const span_remove_button = $("<span>")
-        .addClass("material-symbols-outlined")
-        .text("delete");
-      a_button_remove.append(span_remove_button);
-      td_button_remove.append(a_button_remove);
-      row.append(td_expense_name, td_expense_value, td_button_remove);
+      row.append(td_expense_name, td_expense_value, buttonRemove());
       expense_table.prepend(row);
       calcExpenses();
     } else {
       const revenue_table = $("#revenues-tables").find("table");
       const row = $("<tr>");
       const td_revenue_name = $("<td>")
-        .attr("class", "revenue")
+        .attr("class", "name-revenue")
         .text(input_text.val());
       const td_revenue_value = $("<td>")
         .text(input_number.val())
         .attr("title", input_number.val())
         .addClass("value-revenue");
-      const td_button_remove = $("<td>").addClass("remove-button");
-      const a_button_remove = $("<a>");
-      const span_remove_button = $("<span>")
-        .addClass("material-symbols-outlined")
-        .text("delete");
-      a_button_remove.append(span_remove_button);
-      td_button_remove.append(a_button_remove);
-      row.append(td_revenue_name, td_revenue_value, td_button_remove);
+      row.append(td_revenue_name, td_revenue_value,buttonRemove());
       revenue_table.prepend(row);
       calcRevenues();
     }
@@ -136,3 +142,4 @@ function removeExpenseOrRevenue() {
       calcTotal();
   });
 }
+

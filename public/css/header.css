@@ -3,7 +3,7 @@ header{
     position:  sticky;
     top: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
@@ -11,6 +11,7 @@ header{
     vertical-align: middle;
     background-color:var(--background-color);
     margin-bottom: 1rem;
+
 }
 header a{
     color: var(--h1-color);
@@ -34,7 +35,7 @@ header nav{
     background-color:var(--menu-background-color);
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding: 2rem 0;
 }
 header nav.opened {

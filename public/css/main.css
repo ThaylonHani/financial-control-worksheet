@@ -88,21 +88,26 @@ main table{
     text-align: center;
     align-items:center;
     cursor: default;
-}
+  }
 main table caption{
   color: var(--font-color-5);
   font-weight: bold;
   font-style: italic;
 }
-.expenses, .revenue , .total  {
+.expenses, .revenue , .total , .name-expense  {
     color:var(--font-color-3);
 }
-#rest{
-  width: 10px;
-  overflow:auto ;
-  overflow-x: auto ;
+#total-tables {
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
 
 }
+
 main table thead tr{
     align-items: center;
     text-align: center;
@@ -139,7 +144,11 @@ main .topic .topic-itens{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
+}
 
+.topic .topic-itens p {
+margin-bottom: 1rem;
 }
 
 main .topic span {
@@ -148,4 +157,11 @@ main .topic span {
 
 main .topic p {
     color: var(--font-color-3);
+}
+
+#print-button{
+  padding: 0.6rem 5rem;
+  background-color: var(--menu-background-color);
+  border-radius: 0.4rem;
+  color: var(--font-color-3);
 }
