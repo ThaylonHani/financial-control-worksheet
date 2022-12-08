@@ -1,28 +1,31 @@
-:root{
-    --background-body: #F2F2F2;
-    --background-color: #58594C;
-    --h1-color:#F2EDD0;
-    --font-color:#B3BD97;
-    --font-color-2:#C7F87D;
-    --menu-background-color: #4C6342;
-    --font-color-3:var(--h1-color);
-    --font-color-4:var(--background-color);
-    --font-color-5:var(--background-body);
-    --table-border-color:var(--h1-color);
-    --table-body-border-color:var(--background-body);
+:root {
+  --background-body: #f2f2f2;
+  --background-color: #58594c;
+  --h1-color: #f2edd0;
+  --font-color: #b3bd97;
+  --font-color-2: #c7f87d;
+  --menu-background-color: #4c6342;
+  --font-color-3: var(--h1-color);
+  --font-color-4: var(--background-color);
+  --font-color-5: var(--background-body);
+  --table-border-color: var(--h1-color);
+  --table-body-border-color: var(--background-body);
 }
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-shadow: none;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
 }
-body{
-    background-color:var(--background-body) ;
-    width: 100vw;
-    height: 100vh;
-    min-width:100vw ;
-    min-height:100vw ;
-    font-family: 'Roboto', sans-serif;
+body {
+  background-color: var(--background-body);
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+body::-webkit-scrollbar{
+  width: 0;
 }

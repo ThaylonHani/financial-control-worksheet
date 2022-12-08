@@ -1,10 +1,10 @@
 const menu = $("#menu");
-  const hamburger = menu.find("span");
+const hamburger = menu.find("span");
 const nav = $("#navigation");
-  
+
 $(() => {
-    handleMenu();
-    handleClickOnMenu()
+  handleMenu();
+  handleClickOnMenu();
 });
 
 function handleMenu() {
@@ -20,30 +20,22 @@ function handleMenu() {
 }
 
 function handleClickOnMenu() {
-    $(".about").click(function (event) {
-        // event.preventDefault();
-        nav.toggleClass("opened");
-        if (hamburger.text() == "close") {
-            hamburger.text("menu")
-        }
-        else {
-            hamburger.text("close");
-        }
-    })
+  $(".about").click(function (event) {
+    // event.preventDefault();
+    nav.toggleClass("opened");
+    if (hamburger.text() == "close") {
+      hamburger.text("menu");
+    } else {
+      hamburger.text("close");
+    }
+  });
   $(".expense-table , .revenue-table").click(function (event) {
-      // event.preventDefault();
-        nav.toggleClass("opened");
-        if (hamburger.text() == "close") {
-            hamburger.text("menu")
-        }
-        else {
-            hamburger.text("close");
-        }
-  })
+    // event.preventDefault();
+    nav.toggleClass("opened");
+    if (hamburger.text() == "close") {
+      hamburger.text("menu");
+    } else {
+      hamburger.text("close");
+    }
+  });
 }
-
-
-
-
-
-
