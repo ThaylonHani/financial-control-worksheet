@@ -1,20 +1,20 @@
 footer {
-    display: flex;
-    position: static;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    color: var(--h1-color);
-    background-color: var(--background-color);
-    cursor:default;
-  }
-  footer h3{
-    width: 100%;
-    text-align: end;
-    align-items: center;
-  }
-  footer a {
-    color: var(--font-color);
-    border-bottom: 2px solid var(--h1-color);
-    text-decoration: none;
-  }
+  display: flex;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  color: var(--h1-color);
+  background-color: var(--background-color);
+  cursor: default;
+}
+footer h3 {
+  width: 100%;
+  text-align: end;
+  align-items: center;
+}
+footer a {
+  color: var(--font-color);
+  border-bottom: 2px solid var(--h1-color);
+  text-decoration: none;
+}
